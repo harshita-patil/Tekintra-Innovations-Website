@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="image/fevikon.png" />
+  <!-- Favicon icon -->
+    <title>cyber-security</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+
+    <link href="styles.css" rel="stylesheet">
+
+    <style>
+
+
+
+
+        /* contact */
+                
+         .contact-section {
+            background-color: #0f3554;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+          }
+          .contact-section h2 {
+            color: #4185f4;
+          }
+          .contact-btn {
+            background-color: #4185f4;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+          }
+          .contact-btn:hover {
+            background-color: #3067d6;
+            text-decoration: none;
+          }
+          .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+          }
+        
+          /* process section */
+
+
+/* whatsapp icon */
+
+.whatsapp-icon {
+position: fixed; 
+bottom: 30px; 
+right: 30px; 
+left: 30px;
+font-size: 40px; 
+color: #25D366; 
+z-index: 9999; 
+text-decoration: none;
+}
+.whatsapp-icon:hover {
+background-color: #20b955; 
+bottom: 20px; 
+right: 20px; 
+left: 30px;
+color: white; 
+transform: scale(1.1);
+transition: all 0.3s ease; 
+}
+
+.process-icon {
+    background-color: #043dc1; /* Icon background color */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Icon color (white in this case) */
+    font-size: 1.5rem; /* Adjust icon size */
+}
+
+/* Change icon color on hover or different states */
+.process-icon i {
+    color: #ffffff; /* Default icon color */
+}
+
+/* Example: Change icon color when hovered */
+.process-icon:hover i {
+    color: #ff5733; /* New icon color on hover (optional) */
+}
+
+.imgs {
+  max-width: 100%;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 5);
+}
+
+
+.background-section {
+          background: linear-gradient(#00bfff, #254bc5);
+          /* background: linear-gradient(135deg,  rgba(0, 102, 204, 0.8) , rgba(0, 0, 51, 5)); */
+          color: #ffffff;
+          padding: 25px 0;
+      }
+      
+      .text-content h1.main-heading {
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 5);
+      }
+      
+      .text-content p.sub-heading {
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+      }
+      
+      .right-image {
+          max-width: 100%;
+          height: auto;
+      }
+      
+      .btn-custom {
+          background-color: #042b51;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          text-decoration: none;
+          font-size: 1rem;
+          transition: background-color 0.3s ease;
+      }
+      
+      .btn-custom:hover {
+          background-color: #0fbaea;
+      }
+      
+      @media (max-width: 768px) {
+          .text-content h1.main-heading {
+              font-size: 2rem;
+          }
+          
+          .text-content p.sub-heading {
+              font-size: 1rem;
+          }
+      }
+
+        
+        </style>
+           
+   
+</head>
+<body>
+
+      <!-- Header -->
+      <header class="bg-white py-3 border-bottom sticky-header">
+        <div class=" d-flex justify-content-between align-items-center">
+            <!-- Logo Section -->
+            <div class="logo" style="margin-left: 60px; ">
+                <a href="index.html">
+                    <img src="image/tekinta-logo-transparant.png" alt="Logo" width="150">
+                </a>
+            </div>
+    
+            <!-- Navbar Section for Desktop -->
+            <nav class="d-none d-lg-block">
+                <ul class="nav d-flex justify-content-center " style="font-weight: bold;  transform: scale(1.1); ">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="aboutus.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="service.html">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contacts.html">CONTACT</a></li>
+                </ul>
+            </nav>
+    
+          
+    
+            <!-- Contact Info -->
+            <div class="contact-info d-lg-block" style="display: none; margin-right: 60px;">
+              <i class="bi bi-telephone me-1 "></i> +91 0000000000 | <i class="bi bi-envelope me-1"></i> info@tekintrainnovation.com
+            </div>
+    
+              <!-- Hamburger Menu for Mobile -->
+              <button class="navbar-toggler d-lg-none" id="menuToggle">
+                <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+            </button>
+    
+        </div>
+    </header>
+    
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" id="closeSidebar">&times;</button>
+        <ul class="sidebar-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="contacts.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+  <!-- WhatsApp Icon -->
+  <a href="https://wa.me/0000000000" class="whatsapp-icon">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+
+<!-- Background Section -->
+
+<section class="background-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-content">
+                <h1 class="main-heading">Comprehensive CYBER SECURITY Solution</h1>
+                <p class="sub-heading">Protect your business from digital threats with our end-to-end cyber security services</p>
+                <a href="contacts.html" class="btn btn-custom">Let's Talk</a>
+            </div>
+            <div class="col-md-6">
+                <img src="image/cyber-secutity-first-img.png" alt="Web App Development Illustration" class="img-fluid right-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- RPA Services Section -->
+<section class="service-section">
+    <div class="container">
+        <h2>Explore our range of cyber security solutions tailored to secure your digital assets.</h2>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="bi bi-shield-lock"></i>
+
+
+                    </div>
+                    <h4>Network Security</h4>
+                    <p>Secure your network from unauthorized access and monitor traffic with our advanced network security solutions.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>End point Security</h4>
+                    <p>Protect devices like laptops, desktops, and mobile devices from threats to keep your workforce secure.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h4>Threat Intelligence</h4>
+                    <p>Stay ahead of cyber threats with real-time monitoring and advanced threat intelligence solutions.</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="bi bi-lightning"></i>
+                    </div>
+                    <h4>Incident <br>Response</h4>
+                    <p>Immediate response to cyber incidents, minimizing damage and restoring operations efficiently</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="bi bi-exclamation-triangle"></i>
+                    </div>
+                    <h4>Vulnerability<br> Assessment</h4>
+                    <p>Identify and address vulnerabilities in your systems with our in-depth security assessments.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="bi bi-file-earmark-check"></i>
+                    </div>
+                    <h4>Compliance & Risk Management</h4>
+                    <p>Achieve regulatory compliance and manage risks with our expert guidance and assessment services.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Process Section -->
+<section style="background-color: #00bfff; margin-top: 60px; margin-bottom: 60px; ">
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6">
+                <img src="image/process-cyber.png" alt="Process Image" class="img-fluid  imgs">
+            </div>
+
+            <!-- Content Section -->
+            <div class="col-md-6">
+                <div class="text-center mb-4">
+                    <h2>Our Process</h2>
+                    <p>Our step-by-step approach to securing your systems effectively and efficiently.</p>
+                </div>
+                <div class="process-steps">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="process-icon mr-3">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div>
+                            <h5>1. Assessment</h5>
+                            <p>Understand your security needs and current vulnerabilities.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="process-icon mr-3">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <div>
+                            <h5>2. Strategy Development</h5>
+                            <p>Create a tailored cybersecurity plan based on your unique risks.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="process-icon mr-3">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div>
+                            <h5>3. Implementation</h5>
+                            <p>Deploy solutions to secure your systems and data effectively.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="process-icon mr-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h5>4. Monitoring</h5>
+                            <p>Ongoing monitoring and support to ensure continuous protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+
+<!-- Contact Section -->
+
+<div class="container my-5">
+    <div class="row align-items-center contact-section">
+      <!-- Image Side -->
+      <div class="col-md-6 image-container">
+        <img src="image/contact-two.png" alt="Contact Us Image" height="300px" width="400px">
+      </div>
+      <!-- Content Side -->
+      <div class="col-md-6">
+        <h2>Get a Free Consultation</h2>
+        <p>Speak to our experts today and discover how we can protect your business from cyber threats.</p>
+        <a href="https://wa.me/0000000000" class="btn btn-primary mt-3">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  
+<!-- faq section -->
+
+<section class="container my-5">
+    <h2 class="faq-title">Everything You Need to Know – FAQs</h2>
+    <div id="faqAccordion">
+        <div class="cards">
+            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5 class="mb-0">
+                    Why is cyber security important for my business?
+                </h5>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                    It protects your sensitive data, prevents cyberattacks, and ensures your systems remain secure, helping to avoid financial loss and reputational damage.
+                </div>
+            </div>
+        </div>
+  
+        <div class="cards">
+            <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5 class="mb-0">
+                    What types of cyber security services do you offer?
+                </h5>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                    We offer network security, data protection, threat monitoring, vulnerability assessments, penetration testing, and incident response.
+                </div>
+            </div>
+        </div>
+  
+        <div class="cards">
+            <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h5 class="mb-0">
+                    Do you provide ongoing cyber security support?
+                </h5>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                    Yes, we offer continuous monitoring, threat detection, and security updates to ensure your business stays protected from evolving cyber threats.
+                </div>
+            </div>
+        </div>
+  
+        <div class="cards">
+            <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h5 class="mb-0">
+                    How do you protect against cyber threats?
+                </h5>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                <div class="card-body">
+                    use advanced encryption, firewalls, intrusion detection systems, and regular security audits to identify and mitigate potential threats.
+                </div>
+            </div>
+        </div>
+  
+        <div class="cards">
+            <div class="card-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <h5 class="mb-0">
+                    How do I know if my business is vulnerable to cyberattacks?
+  
+                </h5>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                <div class="card-body">
+                    We conduct comprehensive security assessments, including vulnerability scans and penetration testing, to identify any weaknesses in your systems.
+                </div>
+            </div>
+        </div>
+  
+    </div>
+  </section>
+   <!-- footer section -->
+
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Menu</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+           
+            <li><a href="contacts.html">Contact Us</a></li>
+           
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Services</h5>
+          <h6 style="color: blue;"> <b> Application Development</b></h6>
+          <ul>
+            <li><a href="#">Web App Development</a></li>
+            <li><a href="#">Mobile App Development</a></li>
+            <li><a href="#">Premium Corporate Website Development</a></li>
+            <li><a href="#">eCommerce Online Store Development</a></li>
+            <li><a href="#">UI/UX Development</a></li>
+          </ul>
+          <h6 style="color: blue;" ><b> Cyber Security </b> </h6>
+          <ul>
+            <li><a href="#">Threat Intelligence</a></li>
+            <li><a href="#">Network Security</a></li>
+            <li><a href="#">End point Security</a></li>
+            <li><a href="#">Incident Response</a></li>
+            <li><a href="#">Vulnerability Assessment</a></li>
+            <li><a href="#">Compliance & Risk Management</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>&nbsp;</h5> <!-- Empty header for alignment -->
+          <h6 style="color: blue;" ><b> Software-testing</b> </h6>
+          <ul>
+            <li><a href="#">Manual Testing</a></li>
+            <li><a href="#">Automation Testing</a></li>
+            <li><a href="#">Performance Testing</a></li>
+            <li><a href="#">Security Testing</a></li>
+            <li><a href="#">Usability Testing</a></li>
+            <li><a href="#">Compatibility Testing</a></li>
+          </ul>
+          <h6 style="color: blue;"><b> Digital Marketing</b> </h6>
+          <ul>
+            <li><a href="#">SEO Optimization</a></li>
+            <li><a href="#">Social Media Marketing</a></li>
+            <li><a href="#">Email Campaigns</a></li>
+            <!-- <li><a href="#">Develop Digital Strategy & Applications</a></li> -->
+          </ul>
+          
+        </div>
+        <div class="col-md-3">
+          <!-- <h5>Our Awards</h5>
+          <div class="awards">
+            <p>TOP 50 BRAND FUTURE</p>
+            <p>COMPANY OF THE YEAR 2018</p>
+            <p>THE MOST PROMISING IT COMPANY OF 2018</p>
+            <p>THE MOST INNOVATIVE IT COMPANY 2019</p>
+          </div> -->
+          <div class="contact-info">
+            <p><strong><span style="color: blue;" >Tekintra innovation Private Limited </span></strong></p>
+            <p>The Melange Office No.301, Dapodi, Pune City, Maharashtra 411012, India</p> 
+            <p>Sales: +91 0000000000</p>
+            <p>HR: +91 0000000000</p>
+            <p>Email: <a href="mailto:info@Tekintra.com">info@tekintrainnovation.com</a></p>
+            <div class="social-icons">
+              <a href="facebook-page.html" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+              <a href="linkedin.html" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://wa.me/0000000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Font Awesome CDN (if not already included) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+
+           // Toggle "+" to "−" on click
+    $('#faqAccordion').on('show.bs.collapse', function (e) {
+        $(e.target).siblings('.card-header').find('.faq-toggle').text('−').addClass('expanded').removeClass('collapsed');
+    });
+    
+    $('#faqAccordion').on('hide.bs.collapse', function (e) {
+        $(e.target).siblings('.card-header').find('.faq-toggle').text('+').addClass('collapsed').removeClass('expanded');
+    });
+
+   
+    //   Select elements
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebar = document.getElementById('closeSidebar');
+  
+    // Show sidebar on toggle button click
+    menuToggle.addEventListener('click', () => {
+        sidebar.classList.add('active');
+    });
+  
+    // Hide sidebar on close button click
+    closeSidebar.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+    });
+  
+    // Close sidebar when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+            sidebar.classList.remove('active');
+        }
+    });
+ 
+    </script>
+    
+<script type="text/JavaScript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+<!-- why-chhose-us -->
+
+<!-- <div class="container why-choose-section mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="why-choose-title mb-4">Why Choose Tekintra?</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 illustration">
+           
+            <img src="image/why-chhose-us.png" height="500px" width="400px" alt="Illustration">
+        </div>
+        <div class="col-md-6">
+            <div class="feature-list">
+                <div class="feature-item">
+                  
+                    <div class="feature-icon">
+                        <i class="fas fa-award fa-2x"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Expertise</h5>
+                        <p>A dedicated team of security experts, always on the front lines of cybersecurity.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    
+                    <div class="feature-icon fa-2x">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Quality Assurance</h5>
+                        <p>Rigorous testing to ensure your defenses are both resilient and adaptive.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon fa-2x">
+                       
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Custom Solutions</h5>
+                        <p>Personalized security protocols aligned with your specific business requirements and threat landscape.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                      
+                        <i class="fas fa-life-ring fa-2x"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Continuous Support</h5>
+                        <p>An ongoing partnership, always adapting and fortifying defenses in light of new challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+   -->

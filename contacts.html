@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="image/fevikon.png" />
+  <!-- Favicon icon -->
+    <title>ContactUs</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+
+    <style>
+     
+/* vision section */
+
+.vision-mission-section {
+    background: linear-gradient(135deg,  #254bc5 0%, #5895ff 100%);
+    color: white;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-mission-section:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.vision-mission-section .section-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+.vision-mission-section .highlight {
+    background: linear-gradient(90deg, #f9d423, #ff4e50);
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+}
+
+.element {
+  -webkit-background-clip: padding-box; 
+  -moz-background-clip: padding-box;   
+  background-clip: padding-box;       
+}
+
+
+.vision-mission-section .section-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0.9;
+    z-index: 1;
+    position: relative;
+}
+
+.cta-buttons .btn {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.cta-buttons .btn-primary {
+    background-color: #ff4e50;
+    border: none;
+    color: white;
+}
+
+.cta-buttons .btn-primary:hover {
+    background-color: #e43e40;
+}
+
+.cta-buttons .btn-outline-light {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.cta-buttons .btn-outline-light:hover {
+    background: white;
+    color: #2575fc;
+}
+
+
+/* ==========================form */
+
+.sec1{
+    font-family: 'outfit';
+    background: linear-gradient(#00bfff, #254bc5);
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: blue;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color:black ;
+    border-radius: 10px;
+    margin-bottom: 20px ;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+
+}
+
+.contact-input:focus{
+    border:2px solid #ff994f;
+
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 500px;
+}
+
+@media (max-width:800px)
+{
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+/* <!-- Custom CSS --> */
+
+.custom-hr {
+            border: none; 
+            height: 4px; 
+            background-color: white;
+        .custom-hr-border {
+            border: 2px solid ; 
+        }
+
+      }
+
+      </style>
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-white py-3 border-bottom sticky-header">
+    <div class=" d-flex justify-content-between align-items-center">
+        <!-- Logo Section -->
+        <div class="logo" style="margin-left: 60px; ">
+            <a href="index.html">
+                <img src="image/tekinta-logo-transparant.png" alt="Logo" width="150">
+            </a>
+        </div>
+
+        <!-- Navbar Section for Desktop -->
+        <nav class="d-none d-lg-block">
+            <ul class="nav d-flex justify-content-center " style="font-weight: bold;  transform: scale(1.1); ">
+                <li class="nav-item"><a class="nav-link px-3" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="aboutus.html">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="service.html">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="contacts.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+      
+
+        <!-- Contact Info -->
+        <div class="contact-info d-lg-block" style="display: none; margin-right: 60px;">
+          <i class="bi bi-telephone me-1 "> </i>+91 00000000 | <i class="bi bi-envelope me-1"></i> info@tekintrainnovation.com
+        </div>
+
+          <!-- Hamburger Menu for Mobile -->
+          <button class="navbar-toggler d-lg-none" id="menuToggle">
+            <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+        </button>
+
+    </div>
+</header>
+
+<!-- Sidebar for Mobile -->
+<div class="sidebar" id="sidebar">
+    <button class="close-btn" id="closeSidebar">&times;</button>
+    <ul class="sidebar-nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="contacts.html">CONTACT</a></li>
+    </ul>
+</div>
+  <!-- WhatsApp Icon -->
+  <a href="https://wa.me/00000000" class="whatsapp-icon">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+
+
+ 
+
+  <section class="vision-mission-section text-center py-5">
+    <div class="container">
+        <h1 class="section-title">Your Vision, <span class="highlight">Our Mission</span></h1>
+        <p class="section-subtitle">Together We Build!</p>
+        <div class="cta-buttons mt-4">
+            <a href="https://wa.me/00000000" target="_blank" class="btn btn-primary btn-lg">Contact Us</a>
+            <a href="service.html" class="btn btn-outline-light btn-lg">Explore Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<div class="container my-5">
+  <!-- Tagline -->
+  <div class="row">
+    <div class="col-12 text-center mb-4">
+      <h1 class="display-8 fw-bold">A Journey of a Thousand Miles Begins with a Single Step</h1>
+      <p class="lead text-muted">Take the decision today to transform your business!</p>
+    </div>
+  </div>
+
+  <!-- Contact Details and Map -->
+  <div class="row align-items-center">
+    <!-- Contact Details -->
+    <div class="col-md-6">
+      <div class="p-4 bg-primary rounded shadow">
+        <h2 class="mb-4 text-white fw-bold text-center">Our Office</h2>
+        <!-- <hr class="text-white"> -->
+        <hr class="custom-hr">
+
+        <p class="text-white"><strong>Address:</strong><br>The Melange Office No.301, Dapodi, Pune City, Maharashtra 411012, India</p>
+        <p class="text-white"><strong>Phone:</strong><br>
+          <a href="tel:+9100000000" class="text-decoration-none text-white">
+            <i class="bi bi-telephone me-2"></i>+91 00000000
+          </a>
+        </p>
+        <p class="text-white"><strong>Email:</strong><br>
+          <a href="mailto:info@tekintrainnovation.com" class="text-decoration-none text-white">
+            <i class="bi bi-envelope me-2"></i>info@tekintrainnovation.com
+          </a>
+        </p>
+        <!-- <button>contact Me </button> -->
+        <a href="https://wa.me/00000000" target="_blank " class="btn btn-outline-light mt-3 ">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="col-md-6">
+      <div class="map-container rounded shadow " style="height: 400px; overflow: hidden;  box-shadow: 0 4px 8px rgba(0, 0, 4, 4);">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.5444921998605!2d73.82762547423931!3d18.594563766911747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b90011287a07%3A0x3b0a13d7b80e78f6!2sTekintra%20Innovations%20Pvt%20Ltd%20pune!5e0!3m2!1sen!2sin!4v1732964363012!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Google Map showing Tekintra Innovations location">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+<section class="sec1">
+  <div class="contact-container">
+    <form  action=" https://api.web3forms.com/submit" method="POST"  class="contact-left">
+          <div class="contact-left-title">
+            <h2>Get in touch</h2>
+            <hr>
+  
+          </div>
+          <input type="hidden" name="access_key" value="48ef3994-1bba-49c4-ab08-70e6382eca64">
+          <input type="text" name="name" placeholder="Your name " class="contact-inputs" required>
+  
+          <input type="email" name="name" placeholder="Your Email " class="contact-inputs" required>
+  
+          <input type="number" name="name" placeholder="Your Contact Number " class="contact-inputs" autocomplete required>
+
+          <input type="text" name="subjact" placeholder="subjact " class="contact-inputs"   required>
+  
+         <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea> 
+  
+         <button type="submit">Submit <img src="image/submit-button.png" alt=""></button>
+         <!-- <button type="reset">Reset </button> -->
+  
+    </form>
+    <div class="contact-right">
+        <img src="image/contact-page.png">
+    </div>
+  </div>
+  </section>
+
+
+
+ 
+<!-- faq section -->
+
+<section class="container my-5">
+  <h2 class="faq-title">Everything You Need to Know – FAQs</h2>
+  <div id="faqAccordion">
+      <div class="cards">
+          <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h5 class="mb-0">
+                How can I contact you?
+              </h5>
+              <span class="faq-toggle">+</span>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+              <div class="card-body">
+                You can contact us through our contact form, email, or phone. Our team will respond to you promptly.
+              </div>
+          </div>
+      </div>
+
+      <div class="cards">
+          <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h5 class="mb-0">
+                What is the response time for emails?
+              </h5>
+              <span class="faq-toggle">+</span>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+              <div class="card-body">
+                Our team typically responds to emails within 24 hours. If your query is urgent, you can also reach us by phone.
+              </div>
+          </div>
+      </div>
+
+      <div class="cards">
+          <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h5 class="mb-0">
+                Do you offer consultation services?
+              </h5>
+              <span class="faq-toggle">+</span>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+              <div class="card-body">
+                Yes, we offer consultation services. You can schedule a consultation with us to discuss your business needs, and we will provide solutions and recommendations.
+              </div>
+          </div>
+      </div>
+
+      <div class="cards">
+          <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <h5 class="mb-0">
+                Where is your office located?
+              </h5>
+              <span class="faq-toggle">+</span>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+              <div class="card-body">
+                Our office is located in Pune, India. You can visit our office for a personal meeting if needed.
+              </div>
+          </div>
+      </div>
+
+      <div class="cards">
+          <div class="card-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <h5 class="mb-0">
+                Do you work with international clients?
+              </h5>
+              <span class="faq-toggle">+</span>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+              <div class="card-body">
+                  Yes, we work with global clients. Whether you're based in India or another country, we provide services remotely to clients worldwide.
+              </div>
+          </div>
+      </div>
+
+  </div>
+</section>
+
+
+
+ <!-- footer section -->
+
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h5>Menu</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+         
+          <li><a href="contacts.html">Contact Us</a></li>
+         
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Services</h5>
+        <h6 style="color: blue;"> <b> Application Development</b></h6>
+        <ul>
+          <li><a href="#">Web App Development</a></li>
+          <li><a href="#">Mobile App Development</a></li>
+          <li><a href="#">Premium Corporate Website Development</a></li>
+          <li><a href="#">eCommerce Online Store Development</a></li>
+          <li><a href="#">UI/UX Development</a></li>
+        </ul>
+        <h6 style="color: blue;" ><b> Cyber Security </b> </h6>
+        <ul>
+          <li><a href="#">Threat Intelligence</a></li>
+          <li><a href="#">Network Security</a></li>
+          <li><a href="#">End point Security</a></li>
+          <li><a href="#">Incident Response</a></li>
+          <li><a href="#">Vulnerability Assessment</a></li>
+          <li><a href="#">Compliance & Risk Management</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>&nbsp;</h5> <!-- Empty header for alignment -->
+        <h6 style="color: blue;" ><b> Software-testing</b> </h6>
+        <ul>
+          <li><a href="#">Manual Testing</a></li>
+          <li><a href="#">Automation Testing</a></li>
+          <li><a href="#">Performance Testing</a></li>
+          <li><a href="#">Security Testing</a></li>
+          <li><a href="#">Usability Testing</a></li>
+          <li><a href="#">Compatibility Testing</a></li>
+        </ul>
+        <h6 style="color: blue;"><b> Digital Marketing</b> </h6>
+        <ul>
+          <li><a href="#">SEO Optimization</a></li>
+          <li><a href="#">Social Media Marketing</a></li>
+          <li><a href="#">Email Campaigns</a></li>
+          <!-- <li><a href="#">Develop Digital Strategy & Applications</a></li> -->
+        </ul>
+        
+      </div>
+      <div class="col-md-3">
+        <!-- <h5>Our Awards</h5>
+        <div class="awards">
+          <p>TOP 50 BRAND FUTURE</p>
+          <p>COMPANY OF THE YEAR 2018</p>
+          <p>THE MOST PROMISING IT COMPANY OF 2018</p>
+          <p>THE MOST INNOVATIVE IT COMPANY 2019</p>
+        </div> -->
+        <div class="contact-info">
+          <p><strong><span style="color: blue;" >Tekintra innovation Private Limited </span></strong></p>
+          <p>The Melange Office No.301, Dapodi, Pune City, Maharashtra 411012, India</p>
+          <p>Sales: +9100000000</p>
+          <p>HR: +91000000000</p>
+          <p>Email: <a href="mailto:info@Tekintra.com"> info@tekintrainnovation.com</a></p>
+          <div class="social-icons">
+            <a href="facebook-page.html" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+            <a href="linkedin.html" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/00000000"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+<script>
+  //   Select elements
+  const menuToggle = document.getElementById('menuToggle');
+  const sidebar = document.getElementById('sidebar');
+  const closeSidebar = document.getElementById('closeSidebar');
+
+  // Show sidebar on toggle button click
+  menuToggle.addEventListener('click', () => {
+      sidebar.classList.add('active');
+  });
+
+  // Hide sidebar on close button click
+  closeSidebar.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+  });
+
+  // Close sidebar when clicking outside
+  document.addEventListener('click', (event) => {
+      if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+          sidebar.classList.remove('active');
+      }
+  });
+</script>
+
+<script type="text/JavaScript" src="script.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+

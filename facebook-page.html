@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Page Coming Soon</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #ffffff;
+      color: #333;
+    }
+    .message-box {
+      text-align: center;
+      background: linear-gradient(135deg, #007BFF, #00D4FF);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2),
+                  0 15px 30px rgba(0, 0, 0, 0.1) inset; /* Inner shadow for depth */
+      max-width: 450px;
+      color: white;
+      animation: zoomOut 1.5s ease-out; /* Zoom-out effect */
+    }
+    .message-box h2 {
+      font-size: 24px;
+      color: black;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+    .message-box p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 10px 0;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 5);
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 15px;
+      text-shadow: none;
+    }
+    .contact-info a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    /* Zoom-out animation */
+    @keyframes zoomOut {
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="message-box">
+    <h2>Thank you for your interest in Tekintra Innovations!</h2>
+    <p>Our official Facebook page is under development, and we’ll be live soon.</p>
+    <div class="contact-info">
+      <p><b style="color: black;">Email:</b> <a href="mailto:manoj@tekintrainnovation.com">manoj@tekintrainnovation.com</a></p>
+      <p  style="color: blue;" ><b style="color: black;">Phone:</b> +91-0000000000</p>
+    </div>
+  </div>
+</body>
+</html>

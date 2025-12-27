@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="image/fevikon.png"/>
+  <!-- Favicon icon -->
+
+    <title>Home-Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+    
+    
+
+    <style>
+
+        .section-bg {
+          font-family: 'Poppins', sans-serif;
+          background: linear-gradient(135deg, #004aad, #00c6ff);
+          color: white;
+          padding: 50px 20px;
+          text-align: center;
+          border-radius: 15px;
+          backdrop-filter: blur(10px);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .tagline-container h1, .intro-content h1 {
+          font-size: 2.5rem;
+          font-weight: 700;
+          animation: fadeIn 2s ease-in-out;
+        }
+        .intro-content p {
+          font-size: 1.2rem;
+          margin: 15px 0;
+        }
+        .tagline-container p {
+          font-size: 1.2rem;
+          margin-top: 10px;
+          animation: slideIn 1.5s ease-in-out;
+        }
+        .highlight {
+          color: #FFD700;
+          font-weight: bold;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        @keyframes slideIn {
+          from {
+            transform: translateY(20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+
+        @media (max-width:800px)
+{
+    
+    .contact-right{
+        display: none;
+    }
+}
+
+      </style>
+      
+</head>
+<body>
+
+  <div id="rightClickModal" class="modal">
+    <div class="modal-content">
+        <p>Right click disabled! Source code cannot be accessed.</p>
+        <button class="close-btn" id="closeModal">Close</button>
+    </div>
+</div>
+   
+  <header class="bg-white py-3 border-bottom sticky-header">
+    <div class=" d-flex justify-content-between align-items-center">
+        <!-- Logo Section -->
+        <div class="logo" style="margin-left: 60px; ">
+            <a href="index.html">
+                <img src="image/tekinta-logo-transparant.png" alt="Logo" width="150">
+            </a>
+        </div>
+
+        <!-- Navbar Section for Desktop -->
+        <nav class="d-none d-lg-block">
+            <ul class="nav d-flex justify-content-center " style="font-weight: bold;  transform: scale(1.1); ">
+                <li class="nav-item"><a class="nav-link px-3" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="aboutus.html">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="service.html">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="contacts.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+      
+
+        <!-- Contact Info -->
+        <div class="contact-info d-lg-block" style="display: none; margin-right: 60px;">
+          <i class="bi bi-telephone me-1 "></i>+91 0000000000| <i class="bi bi-envelope me-1"></i>info@tekintrainnovation.com
+        </div>
+
+          <!-- Hamburger Menu for Mobile -->
+          <button class="navbar-toggler d-lg-none" id="menuToggle">
+            <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+        </button>
+
+    </div>
+</header>
+
+<!-- Sidebar for Mobile -->
+<div class="sidebar" id="sidebar">
+    <button class="close-btn" id="closeSidebar">&times;</button>
+    <ul class="sidebar-nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="contacts.html">CONTACT</a></li>
+    </ul>
+</div>
+
+  <!-- WhatsApp Icon -->
+  <a href="https://wa.me/+919130096555" class="whatsapp-icon">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+
+<section class="section-bg mx-auto ">
+    <div class="intro-content">
+      <h1 style="color: black;">Welcome to Tekintra Innovations</h1>
+      <p>Transforming Ideas into Reality with Advanced IT Solutions</p>
+      <p>At Tekintra Innovations, we help businesses succeed with smart IT solutions. Based in Pune, India, we provide reliable managed services, custom software, and advanced web and mobile app development. From creating user-friendly e-commerce websites to powerful business portals and cross-platform apps, we focus on delivering the best for your business.</p>
+    </div>
+    <div class="tagline-container mt-4">
+      <h1  class="text-dark"> Let’s work together to <span class="highlight">bring your ideas to life</span></h1>
+      <p class="text-black">and take your business to the <span class="highlight">next level.</span> Choose <strong>Tekintra Innovations</strong>—where innovation meets simplicity!</p>
+    </div>
+  </section>
+
+
+    <!-- Main Content -->
+    <!-- <section class="main-section">
+        <div class="container text-center py-5">
+            <h1 class="text-dark">Welcome to Tekintra Innovations</h1>
+            <p><b>Transforming Ideas into Reality with Advanced IT Solutions</b></p>
+            <div class="mt-4">
+                <p>At Tekintra Innovations, we help businesses succeed with smart IT solutions. Based in Pune, India, we provide reliable managed services, custom software, and advanced web and mobile app development. From creating user-friendly e-commerce websites to powerful business portals and cross-platform apps, we focus on delivering the best for your business.<br>
+
+                    Let’s work together to bring your ideas to life and take your business to the next level. Choose Tekintra Innovations—where innovation meets simplicity!
+                </p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- BSFI Industry Section -->
+    <!-- <section class="bsfi-section text-center py-5">
+        <div class="container position-relative">
+            <div class="circle-graphic">
+                <div class="circle">
+                    <div class="icon-section">
+                        <div class="icon financial">Financial</div>
+                        <div class="icon banking">Banking</div>
+                        <div class="icon insurance">Insurance</div>
+                        <div class="icon services">Services</div>
+                    </div>
+                    <div class="center-light">
+                        <img src="lightbulb.png" alt="Light Bulb Icon">
+                    </div>
+                </div>
+            </div>
+            <h2 class="mt-4">BSFI Industry Expert</h2>
+        </div>
+    </section> -->
+
+    <!-- <div class="header-text">
+        <span style="color: blue;">WHAT</span> WE DO
+    </div> -->
+    <div class="header-text mt-5" style="text-align: center; font-size: 2rem; font-weight: bold; font-family: Arial, sans-serif; letter-spacing: 2px;">
+        <span style="color:  #000000; font-size: larger;  ">  WHAT WE DO</span> 
+         <hr class="mt-0" style="border: 3px solid black; width: 20%; margin: 10px auto;">
+
+        <!-- <span style="color:   #000000;  font-size: larger;"> </span> -->
+    </div>
+    
+    <!-- <hr class="mt-0" style="border: 3px solid black; width: 20%; margin: 10px auto;"> -->
+    
+
+    <div class="services-container">
+        <div class="background-wave"></div>
+        <div class="hexagon-container">
+          
+            <div class="hexagon"> <a href="Application-development.html"> Application Development </a></div>
+            <div class="hexagon"><a href="software-testing.html"> Software Testing & QA</a></div>
+            <div class="hexagon hexagon-center"> <a href="service.html"> SERVICES</a></div>
+            <div class="hexagon"><a href="digital-marketing.html"> Digital Marketing</a></div>
+            <div class="hexagon"><a href="cybar-sequrity.html"> Cyber Security</a></div>
+           
+        </div>
+    </div>
+    
+
+<!-- section3 -->
+<section class="bgcolor">
+<div class="container service-section text-dark">
+    <h2>Custom App Development & Ongoing Maintenance</h2>
+    <!-- <h3 class="fs-10 mb-6 pb-1"> Custom App Development & <span class="text-highlight">Ongoing Maintenance</span></h3> -->
+    <p class="lead fs-15">Reliable Solutions to Keep Your Business Moving Forward</p>
+    <p>At Tekintra Innovations, we specialize in building custom, scalable applications that help your business thrive in today’s digital world. From concept to deployment and continuous support, we cover every stage of your software’s journey. Whether you need a web application, mobile app, or enterprise solution, we focus on delivering high-performance, secure, and future-proof applications. With our proactive maintenance, we ensure your software stays efficient and evolves with your business.</p>
+    
+    <div class="row">
+        <div class="col-md-4">
+            <div class="service-box">
+                <div class="icon-circle">
+                    <!-- Web Application Icon -->
+                    <i class="bi bi-globe"></i>
+                </div>
+                <h3 style="color: black;">Web Application Development</h3>
+                <p>Boost your business with fast, scalable, and intuitive web applications that engage users and optimize operations.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-box">
+                <div class="icon-circle">
+                    <!-- Mobile App Icon -->
+                    <i class="bi bi-phone"></i>
+                </div>
+                <h3 style="color: black;">Mobile App Development</h3>
+                <p>Reach your customers anywhere with innovative mobile apps designed to enhance user experience and drive growth.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-box">
+                <div class="icon-circle">
+                    <!-- Corporate Website Icon -->
+                    <i class="bi bi-building"></i>
+                </div>
+                <h3 style="color: black;" > Corporate Website Development </h3>
+                <p>Create a lasting online impact with a custom-built website that not only looks stunning but also converts visitors into customers.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- Why Choose Us Section -->
+
+<div class="container why-choose-section py-5">
+  <div class="row text-center text-md-start">
+      <div class="col-12 mb-4">
+          <h2 class="why-choose-title">Why Choose Tekintra?</h2>
+      </div>
+  </div>
+  <div class="row align-items-center">
+      <!-- Illustration Section -->
+      <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center ">
+          <img src="image/home-page-why-choose.png" alt="Illustration" class="img-fluid rounded-5 contact-right">
+      </div>
+
+      <!-- Features Section -->
+      <div class="col-md-6">
+          <div class="feature-list">
+              <div class="feature-item d-flex align-items-start mb-4">
+                  <div class="feature-icon me-3">
+                      <i class="fas fa-award fa-2x text-primary"></i>
+                  </div>
+                  <div class="feature-content">
+                      <h5>Expertise</h5>
+                      <p>Our experienced team stays ahead of the latest technologies to secure and grow your business.</p>
+                  </div>
+              </div>
+              <div class="feature-item d-flex align-items-start mb-4">
+                  <div class="feature-icon me-3">
+                      <i class="fas fa-cogs fa-2x text-primary"></i>
+                  </div>
+                  <div class="feature-content">
+                      <h5>Tailored Solutions</h5>
+                      <p>We create customized solutions that perfectly match your unique business needs.</p>
+                  </div>
+              </div>
+              <div class="feature-item d-flex align-items-start mb-4">
+                  <div class="feature-icon me-3">
+                      <i class="fas fa-check-circle fa-2x text-primary"></i>
+                  </div>
+                  <div class="feature-content">
+                      <h5>Quality & Reliability</h5>
+                      <p>We deliver high-quality, secure, and dependable services you can count on.</p>
+                  </div>
+              </div>
+              <div class="feature-item d-flex align-items-start">
+                  <div class="feature-icon me-3">
+                      <i class="fas fa-headset fa-2x text-primary"></i>
+                  </div>
+                  <div class="feature-content">
+                      <h5>Ongoing Support</h5>
+                      <p>We provide continuous support to adapt and strengthen your solutions over time.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- contact -->
+<section class="contact-section mb-5 rounded-5" style="background-color: #c6e5f0;">
+    <div class="container">
+      <div class="row no-gutters">
+        <!-- Left Side Image -->
+        <div class="col-md-6 contact-image">
+            
+        </div>
+  
+        <!-- Right Side Content -->
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="contact-details p-5">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out with any questions, inquiries, or feedback. Our team is here to help and provide the best solutions for your needs.</p>
+            <p><strong>Email:</strong> <a href="mailto:info@example.com">info@tekintrainnovation.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+919130096555</a></p>
+            <a href="https://wa.me/+919130096555" target="_blank "  class="btn btn-contact mt-4">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Menu</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+           
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Services</h5>
+          <h6 style="color: blue;"> <b> Application Development</b></h6>
+          <ul>
+            <li><a href="#">Web App Development</a></li>
+            <li><a href="#">Mobile App Development</a></li>
+            <li><a href="#">Premium Corporate Website Development</a></li>
+            <li><a href="#">eCommerce Online Store Development</a></li>
+            <li><a href="#">UI/UX Development</a></li>
+          </ul>
+          <h6 style="color: blue;" ><b> Cyber Security </b> </h6>
+          <ul>
+            <li><a href="#">Threat Intelligence</a></li>
+            <li><a href="#">Network Security</a></li>
+            <li><a href="#">End point Security</a></li>
+            <li><a href="#">Incident Response</a></li>
+            <li><a href="#">Vulnerability Assessment</a></li>
+            <li><a href="#">Compliance & Risk Management</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>&nbsp;</h5> 
+          <h6 style="color: blue;" ><b> Software-testing</b> </h6>
+          <ul>
+            <li><a href="#">Manual Testing</a></li>
+            <li><a href="#">Automation Testing</a></li>
+            <li><a href="#">Performance Testing</a></li>
+            <li><a href="#">Security Testing</a></li>
+            <li><a href="#">Usability Testing</a></li>
+            <li><a href="#">Compatibility Testing</a></li>
+          </ul>
+          <h6 style="color: blue;"><b> Digital Marketing</b> </h6>
+          <ul>
+            <li><a href="#">SEO Optimization</a></li>
+            <li><a href="#">Social Media Marketing</a></li>
+            <li><a href="#">Email Campaigns</a></li>
+            <!-- <li><a href="#">Develop Digital Strategy & Applications</a></li> -->
+          </ul>
+          
+        </div>
+        <div class="col-md-3">
+          <!-- <h5>Our Awards</h5>
+          <div class="awards">
+            <p>TOP 50 BRAND FUTURE</p>
+            <p>COMPANY OF THE YEAR 2018</p>
+            <p>THE MOST PROMISING IT COMPANY OF 2018</p>
+            <p>THE MOST INNOVATIVE IT COMPANY 2019</p>
+          </div> -->
+          <div class="contact-info">
+            <p><strong><span style="color: blue;" >Tekintra innovation Private Limited </span></strong></p>
+            <p> The Melange Office No.301, Dapodi, Pune City, Maharashtra 411012, India</p>
+            <p>Sales: +91 9130096555</p>
+            <p>HR: +91 9130096555</p>
+            <p>Email: <a href="mailto:info@Tekintra.com">info@tekintrainnovation.com</a></p>
+            <div class="social-icons">
+              <a href="facebook-page.html" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="linkedin.html" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://wa.me/+919130096555" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery Library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  //   Select elements
+  const menuToggle = document.getElementById('menuToggle');
+  const sidebar = document.getElementById('sidebar');
+  const closeSidebar = document.getElementById('closeSidebar');
+
+  // Show sidebar on toggle button click
+  menuToggle.addEventListener('click', () => {
+      sidebar.classList.add('active');
+  });
+
+  // Hide sidebar on close button click
+  closeSidebar.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+  });
+
+  // Close sidebar when clicking outside
+  document.addEventListener('click', (event) => {
+      if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+          sidebar.classList.remove('active');
+      }
+  });
+</script>
+<script type="text/JavaScript" src="script.js"></script>
+
+<!-- Bootstrap JavaScript (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+
+</body>
+</html>
